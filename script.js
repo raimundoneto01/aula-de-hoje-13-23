@@ -42,8 +42,8 @@ function checkidade()
     let idd = Number(idade.value);
 
    // idd < 10 ? resultado.innerHTML = "É criança" : resultado.innerHTML = "Não é criança";
-    idd < 10 &&  (resultado.innerHTML = "É criança" );
-    (idd >= 10 && idd < 18 ) && (resultado.innerHTML = "É juvenil" );
-    (idd >= 18 && idd < 60 ) && (resultado.innerHTML = "É Adulto" );
-    idd > 60 && (resultado.innerHTML = "É Idoso" );
+    idd < 10 &&  (document.getElementById("imagem").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7aiw-u_-cVQDdjxJsweFzImLl-pF2jELQ-g&usqp=CAU.jpg");
+    (idd >= 10 && idd < 18 ) && (document.getElementById("imagem").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw7Y5gEUkFn-bvHBs9v9BzvaKqGhWCswULCA&usqp=CAU");
+    (idd >= 18 && idd < 60 ) && (document.getElementById("imagem").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTVTLvAd9npUM8TmqfWk_VKnV4oSW5awo_eg&usqp=CAU" );
+    idd >= 60 && (document.getElementById("imagem").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR-cRRv0VKguuLc-bYDGj0GAit2mevRxJvpg&usqp=CAU");
 }
